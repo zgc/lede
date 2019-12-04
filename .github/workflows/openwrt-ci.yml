@@ -59,6 +59,9 @@ jobs:
 
       - name: Update feeds
         run: |
+          git clone https://github.com/rosywrt/luci
+          mv luci/themes/luci-theme-rosy package/lean/
+          rm -rf luci/
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
