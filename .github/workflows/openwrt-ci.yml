@@ -59,10 +59,10 @@ jobs:
 
       - name: Update feeds
         run: |
-          git clone https://github.com/rosywrt/luci
-          mv luci/themes/luci-theme-rosy package/lean/
-          rm -rf luci/
-          sed -i 's/..\/..\/luci.mk/$(TOPDIR)\/feeds\/luci\/luci.mk/' package/lean/luci-theme-rosy/Makefile
+          #git clone https://github.com/rosywrt/luci
+          #mv luci/themes/luci-theme-rosy package/lean/
+          #rm -rf luci/
+          #sed -i 's/..\/..\/luci.mk/$(TOPDIR)\/feeds\/luci\/luci.mk/' package/lean/luci-theme-rosy/Makefile
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
