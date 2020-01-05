@@ -11,10 +11,10 @@ name: nanopi r1s路由系统自动编译工程
 
 on:
   schedule:
-    - cron: 0 16 * * *
+    - cron: 0 20 * * *
   push:
     paths: 
-      - '.github/workflows/neo2.yml'
+      - '.github/workflows/r1s.yml'
 
 jobs:
 
