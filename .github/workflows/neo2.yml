@@ -212,7 +212,7 @@ jobs:
 
       - name: Compile firmware
         run: |
-          make -j3 || make -j4 V=s
+          make -j$(nproc) -s || make -j1 V=s
           echo "======================="
           echo "Space usage:"
           echo "======================="
