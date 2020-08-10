@@ -10,7 +10,7 @@ name: Merge-upstream
 
 on:
   schedule:
-    - cron: '10 */8 * * *'
+    - cron: '20 */8 * * *'
   watch:
     types:
       - 'started'
@@ -23,7 +23,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
       with:
         ref: master
         fetch-depth: 0
@@ -37,7 +37,7 @@ jobs:
 
     - name: Load upstream commits
       run:  |
-        git remote add upstream https://github.com/coolsnowwolf/lede
+        git remote add upstream https://github.com/klever1988/lede
         git fetch upstream
         git rebase upstream/master
 

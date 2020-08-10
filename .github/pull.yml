@@ -1,5 +1,5 @@
 version: "1"
 rules:
   - base: master
-    upstream: coolsnowwolf:master    # change `wei` to the owner of upstream repo
+    upstream: klever1988:master    # change `wei` to the owner of upstream repo
     mergeMethod: rebase
