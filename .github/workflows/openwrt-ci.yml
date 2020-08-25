@@ -398,7 +398,8 @@ jobs:
           ' > smartdns/package/openwrt/files/etc/config/smartdns
           cat >> smartdns/package/openwrt/custom.conf <<EOF
 
-          # speed-check-mode tcp:443,ping
+
+          speed-check-mode tcp:443,ping
           EOF
           git clone -b openwrt-18.06-dev https://github.com/project-openwrt/openwrt.git
           cat smartdns/package/openwrt/files/etc/config/smartdns > openwrt/package/ntlf9t/smartdns/conf/smartdns.conf
