@@ -406,7 +406,7 @@ jobs:
           cat smartdns/package/openwrt/files/etc/config/smartdns > openwrt/package/ntlf9t/smartdns/conf/smartdns.conf
           cat smartdns/package/openwrt/custom.conf > openwrt/package/ntlf9t/smartdns/conf/custom.conf
           mv OpenClash/luci-app-openclash package/lean/
-          git clone -b lede --single-branch https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
+          mv openwrt/package/ntlf9t/luci-app-smartdns package/lean/luci-app-smartdns
           mv openwrt/package/ntlf9t/smartdns package/lean/
           mkdir -p package/base-files/files/etc/openclash/core
           curl -L https://github.com/vernesong/OpenClash/releases/download/TUN/clash-linux-${CPU_MODEL}.tar.gz | tar zxf -
